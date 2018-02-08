@@ -40,7 +40,8 @@ function! NimIndent()
         return
     endif
 
-    if prevl =~ '\([:=\[({]\|and\|or\|not\|xor\|shl\|shr\|div\|mod\|in\|notin\|is\|isnot\|of\)\s*$'
+    "if prevl =~ '\([:=\[({]\|and\|or\|not\|xor\|shl\|shr\|div\|mod\|in\|notin\|is\|isnot\|of\)\s*$'
+    if prevl =~ '\([\[({]\|and\|or\|not\|xor\|shl\|shr\|div\|mod\|in\|notin\|is\|isnot\|of\)\s*$'
         return Up()
     endif
 
