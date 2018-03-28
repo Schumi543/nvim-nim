@@ -87,6 +87,8 @@ syntax keyword nimBuiltinFunction toU8 unlikely unsafeAddr unsafeNew write write
 syntax keyword nimBuiltinFunction writeLine writeLn writeStackTrace xlen ze ze64 zeroMem accumulateResult currentSourcePath
 syntax keyword nimBuiltinFunction doAssert excl incl newException onFailedAssert stdmsg
 
+syntax keyword nimUsefulFunction findAll
+
 
 syntax keyword nimBuiltinIterators countdown countup fieldPairs fields items lines mitems mpairs pairs
 
@@ -139,6 +141,7 @@ syntax case match
 " Linking
 highlight link nimBoolean          Boolean
 highlight link nimBuiltinFunction  Function
+highlight link nimUsefulFunction   Function
 highlight link nimBuiltinIterators Typedef
 highlight link nimBuiltinType      Type
 highlight link nimChar             Character
