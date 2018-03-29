@@ -47,7 +47,7 @@ syntax match   nimOP6         "\."
 syntax match   nimOP5         "[=|<|>]"
 syntax match   nimOP5         "\v([!<>]\=)"
 syntax match   nimOP2         "[@:?]"
-syntax match   nimOP1         "[\*+\/%&]="
+syntax match   nimOP1         "[\*+\/%&\-]="
 syntax match   nimOP0         "=>"
 syntax match   nimOP0         "\->"
 
