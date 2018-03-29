@@ -23,12 +23,16 @@ function! FindNimbleModulesPath()
     return "~/.nimble/pkgs/"
 endfunction
 
+function! FindChooseNimModulesPath()
+endfunction
 
 " FIXME
 function! FindNimModulesPath()
-    "return "/usr/lib/nim/"
-    return "~/.choosenim/toolchains/nim-0.18.0/lib/"
+    return "~/.nimble/bin/"
 endfunction
+
+" choosenim modules location
+let g:nvim_choosenim_deps_nim = "~/.choosenim/toolchains/nim-0.18.0/lib/"
 
 "if exists("g:ycm_semantic_triggers")
 "    let g:ycm_semantic_triggers["nim"] = ['.']

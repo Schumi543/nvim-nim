@@ -82,6 +82,10 @@ function! modules#FindGlobalImports()
     return modules#ImportMap(globpath(g:nvim_nim_deps_nim, "**/*.nim", 0, 1))
 endfunction
 
+function! modules#FindGlobalImports()
+    return modules#ImportMap(globpath(g:nvim_choosenim_deps_nim, "**/*.nim", 0, 1))
+endfunction
+
 
 function! modules#moduleLocation(str)
     if has_key(modules#FindGlobalImports(), a:str)
