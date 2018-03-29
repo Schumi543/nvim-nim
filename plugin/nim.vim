@@ -29,9 +29,9 @@ function! FindNimModulesPath()
     return "/usr/lib/nim/"
 endfunction
 
-if exists("g:ycm_semantic_triggers")
-    let g:ycm_semantic_triggers["nim"] = ['.']
-endif
+"if exists("g:ycm_semantic_triggers")
+"    let g:ycm_semantic_triggers["nim"] = ['.']
+"endif
 
 if !exists("g:nvim_nim_enable_async")
     let g:nvim_nim_enable_async = has("nvim")
