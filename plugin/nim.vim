@@ -26,7 +26,8 @@ endfunction
 
 " FIXME
 function! FindNimModulesPath()
-    return "/usr/lib/nim/"
+    "return "/usr/lib/nim/"
+    return "~/.choosenim/toolchains/nim-0.18.0/lib/"
 endfunction
 
 "if exists("g:ycm_semantic_triggers")
