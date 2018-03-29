@@ -75,7 +75,7 @@ function! modules#ImportMap(imports)
 endfunction
 
 " function! modules#FindLocalImports()
-"     " return ImportMap(globpath(g:nvim_nim_deps_nim, "**/*.nim", 0, 1))
+"      return ImportMap(globpath(g:nvim_nim_deps_nim, "**/*.nim", 0, 1))
 " endfunction
 
 function! modules#FindGlobalImports()
@@ -93,10 +93,11 @@ function! modules#moduleLocation(str)
     endif
 endfunction
 
-
 function! modules#isGlobalImport(str)
     return has_key(modules#FindGlobalImports(), a:str)
 endfunction
+
+"function! module#
 
 
 let &cpo = s:save_cpo

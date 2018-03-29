@@ -23,12 +23,9 @@ function! FindNimbleModulesPath()
     return "~/.nimble/pkgs/"
 endfunction
 
-function! FindChooseNimModulesPath()
-endfunction
-
 " FIXME
 function! FindNimModulesPath()
-    return "~/.nimble/bin/"
+    return "~/.choosenim/toolchains/nim-0.18.0/lib/"
 endfunction
 
 " choosenim modules location
