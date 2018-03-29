@@ -25,15 +25,12 @@ endfunction
 
 " FIXME
 function! FindNimModulesPath()
-    return "~/.choosenim/toolchains/nim-0.18.0/lib/"
+    return "~/.choosenim/toolchains/nim-0.18.0/lib/pure/"
 endfunction
 
-" choosenim modules location
-let g:nvim_choosenim_deps_nim = "~/.choosenim/toolchains/nim-0.18.0/lib/"
-
-"if exists("g:ycm_semantic_triggers")
-"    let g:ycm_semantic_triggers["nim"] = ['.']
-"endif
+if exists("g:ycm_semantic_triggers")
+    let g:ycm_semantic_triggers["nim"] = ['.']
+endif
 
 if !exists("g:nvim_nim_enable_async")
     let g:nvim_nim_enable_async = has("nvim")
