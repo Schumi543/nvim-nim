@@ -1,7 +1,5 @@
-# nvim-nim [![Build Status](https://travis-ci.org/baabelfish/nvim-nim.svg?branch=master)](https://travis-ci.org/baabelfish/nvim-nim)
-Nim support for vim and advanced support for neovim. Still in heavy development.
-
-Nim version 0.17.2
+# nvim-nim
+Nim version 0.18.0
 
 ## Features
 
