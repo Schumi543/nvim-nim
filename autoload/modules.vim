@@ -74,9 +74,9 @@ function! modules#ImportMap(imports)
     return result
 endfunction
 
-" function! modules#FindLocalImports()
-"      return ImportMap(globpath(g:nvim_nim_deps_nim, "**/*.nim", 0, 1))
-" endfunction
+function! modules#FindLocalImports()
+    return ImportMap(globpath(g:nvim_nim_deps_nim, "**/*.nim", 0, 1))
+endfunction
 
 function! modules#FindGlobalImports()
     return modules#ImportMap(globpath(g:nvim_nim_deps_nim, "**/*.nim", 0, 1))
