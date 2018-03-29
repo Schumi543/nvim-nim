@@ -1,6 +1,5 @@
 scriptencoding utf-8
 
-
 if exists("g:loaded_nvim_nim")
     finish
 endif
@@ -25,7 +24,11 @@ endfunction
 
 " FIXME
 function! FindNimModulesPath()
-    return "~/.choosenim/toolchains/nim-0.18.0/lib/pure/"
+    if has("choosenim")
+        return "~/.choosenim/toolchains/nim-0.18.0/lib/"
+    else
+        return "/usr/lib/nim/"
+    endif
 endfunction
 
 if exists("g:ycm_semantic_triggers")
