@@ -35,8 +35,8 @@ syntax keyword nimTodo TODO FIXME
 
 
 " Operators
-syntax match   nimOperatorAll "[&:?!@<>\|\~\.\^\=\/\+\-\*\$%]\+"
-syntax keyword nimOperator    not   xor shl shr div mod notin is isnot . += -= *= /= &=
+" syntax match   nimOperatorAll "[&:?!@<>\|\~\.\^\=\/\+\-\*\$%]\+"
+syntax keyword nimOperator    not   xor shl shr div mod notin is isnot .
 syntax keyword nimOP9         div   mod shl   shr
 syntax keyword nimOP5         notin is  isnot not
 syntax keyword nimOP4         and
@@ -92,7 +92,7 @@ syntax keyword nimUsefulFunction findAll maxIndex
 
 syntax keyword nimBuiltinIterators countdown countup fieldPairs fields items lines mitems mpairs pairs
 
-syntax keyword nimBuiltinType int int8 int16 int32 int64 uint uint8 uint16 uint32 uint64 float float32 float64 bool char string cstring pointer Ordinal ptr ref expr stmt typedesc void auto any untyped typed SomeSignedInt SomeUnsignedInt SomeInteger SomeOrdinal SomeReal SomeNumber range array openArray varargs seq set Slice shared guarded byte Natural Positive RootObj RootRef RootEffect TimeEffect IOEffect ReadIOEffect WriteIOEffect ExecIOEffect Exception SystemError IOError OSError LibraryError ResourceExhaustedError ArithmeticError DivByZeroError OverflowError AccessViolationError AssertionError ValueError KeyError OutOfMemError IndexError FieldError RangeError StackOverflowError ReraiseError ObjectAssignmentError ObjectConversionError FloatingPointError FloatInvalidOpError FloatDivByZeroError FloatOverflowError FloatUnderflowError FloatInexactError DeadThreadError TResult Endianness TaintedString LibHandle ProcAddr ByteAddress BiggestInt BiggestFloat clong culong cchar cschar cshort cint csize clonglong cfloat cdouble clongdouble cuchar cushort cuint culonglong cstringArray PFloat32 PFloat64 PInt64 PInt32 GC_Strategy PFrame TFrame File FileMode FileHandle THINSTANCE AlignType RefCount Utf16Char WideCString NimNode
+syntax keyword nimBuiltinType int int8 int16 int32 int64 uint uint8 uint16 uint32 uint64 float float32 float64 bool char string cstring pointer Ordinal ptr ref expr stmt typedesc void auto any untyped typed SomeSignedInt SomeUnsignedInt SomeInteger SomeOrdinal SomeReal SomeNumber range array openArray varargs seq set UncheckedArrray sink lent HSlice Slice shared guarded byte Natural Positive RootObj RootRef RootEffect TimeEffect IOEffect ReadIOEffect WriteIOEffect ExecIOEffect Exception SystemError CaychableError IOError OSError LibraryError ResourceExhaustedError ArithmeticError DivByZeroError OverflowError AccessViolationError AssertionError ValueError KeyError OutOfMemError IndexError FieldError RangeError StackOverflowError ReraiseError ObjectAssignmentError ObjectConversionError FloatingPointError FloatInvalidOpError FloatDivByZeroError FloatOverflowError FloatUnderflowError DeadThreadError NilAccessError MoveError TResult Endianness TaintedString LibHandle ProcAddr ByteAddress BiggestInt BiggestFloat clong culong cchar cschar cshort cint csize clonglong cfloat cdouble clongdouble cuchar cushort cuint culonglong cstringArray PFloat32 PFloat64 PInt64 PInt32 GC_Strategy PFrame TFrame File FileMode FileHandle THINSTANCE AlignType RefCount Utf16Char WideCString NimNode
 syntax keyword nimGlobals programResult globalRaiseHook localRaiseHook outOfMemHook stdin stdout stderr errorMessageWriter
 syntax keyword nimGlobals nimvm
 syntax keyword nimGlobals appType NoFakeVars isMainModule CompileDate CompileTime cpuEndian hostOS hostCPU QuitSuccess QuitFailure Inf NegInf NaN NimMajor NimMinor NimPatch NimVersion nativeStackTraceSupported
@@ -151,7 +151,7 @@ highlight link nimFunction         Function
 highlight link nimIdentifier       Identifier
 highlight link nimKeyword          Keyword
 highlight link nimNumber           Number
-highlight link nimOperatorAll      Operator
+" highlight link nimOperatorAll      Operator
 highlight link nimString           String
 highlight link nimStringLiterals   Character
 highlight link nimPragmas          Character
