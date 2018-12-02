@@ -36,7 +36,7 @@ syntax keyword nimTodo TODO FIXME
 
 " Operators
 syntax match   nimOperatorAll "[&:?!@<>\|\~\.\^\=\/\+\-\*\$%]\+"
-syntax keyword nimOperator    not   xor shl shr div mod notin is isnot .
+syntax keyword nimOperator    not   xor shl shr div mod notin is isnot . += -= *= /= &=
 syntax keyword nimOP9         div   mod shl   shr
 syntax keyword nimOP5         notin is  isnot not
 syntax keyword nimOP4         and
