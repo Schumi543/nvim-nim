@@ -6,6 +6,7 @@ set cpo&vim
 
 let s:idtypes = {
             \ 'skProc':         ["p", "Function"],
+            \ 'skFunc':         ["f", "Function"]
             \ 'skTemplate':     ["t", "Template"],
             \ 'skType':         ["T", "Type"],
             \ 'skMacro':        ["M", "Macro"],

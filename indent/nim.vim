@@ -110,11 +110,11 @@ function! GetNimIndent(lnum)
   endif
 
   if pline =~ '=\s*$'
-    return s:FindStartLine(plnum, '^\s*\(proc\|template\|macro\|iterator\)\>') + &sw
+    return s:FindStartLine(plnum, '^\s*\(proc\|func\|template\|macro\|iterator\)\>') + &sw
   endif
 
   " if we got here, this should be the begging of a multi-line if expression for example
-  if pline =~ '^\s*\(if\|when\|proc\|iterator\|macro\|template\|for\|while\)[^:]*$'
+  if pline =~ '^\s*\(if\|when\|proc\|func\|iterator\|macro\|template\|for\|while\)[^:]*$'
     return plindent + &sw
   endif
 
