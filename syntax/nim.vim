@@ -31,7 +31,7 @@ syntax keyword nimStorage      tuple  enum    object  interface concept  distinc
 syntax keyword nimStorageClass type
 syntax keyword nimTypedef      func   proc    method  converter
 
-syntax keyword nimTodo TODO FIXME
+syntax keyword nimTodo TODO FIXME HACK MEMO XXX
 
 
 " Operators

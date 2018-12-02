@@ -1,6 +1,5 @@
 scriptencoding utf-8
 
-
 syntax keyword nimoTypes      Types
 syntax keyword nimoCallables  Routines
 syntax keyword nimoConstants  Constants
