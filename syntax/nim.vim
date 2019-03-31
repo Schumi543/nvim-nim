@@ -175,7 +175,7 @@ highlight link nimStorageClass StorageClass
 highlight link nimTypedef      Typedef
 highlight link nimOperator     Operator
 
-if len(g:nvim_nim_highlighter_semantics) > 0
+if exists(g:nvim_nim_highlighter_semantics) && len(g:nvim_nim_highlighter_semantics) > 0
     hi Semantic0  guifg=#904719 gui=none
     hi Semantic1  guifg=#44f365 gui=none
     hi Semantic2  guifg=#503f43 gui=none
