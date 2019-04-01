@@ -18,14 +18,16 @@ endfunction
 
 
 " FIXME
+" MEMO: 'nimble show foo' shows foo package's location
 function! FindNimbleModulesPath()
     return "~/.nimble/pkgs/"
 endfunction
 
-" FIXME
 function! FindNimModulesPath()
-    if has("choosenim")
-        return "~/.choosenim/toolchains/nim-0.18.0/lib/"
+    if executable("choosenim")
+        let a:path = split(system("choosenim show --noColor | grep 'Path:'"), ' ')
+        let a:path = substitute(a:path[1], '\n', '', '')
+        return a:path . "/lib/"
     else
         return "/usr/lib/nim/"
     endif
