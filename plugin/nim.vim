@@ -95,10 +95,12 @@ if !exists("g:nvim_nim_enable_default_binds")
     let g:nvim_nim_enable_default_binds = 1
 endif
 
+" FIXME: not work
 if !exists("g:nvim_nim_enable_custom_textobjects")
     let g:nvim_nim_enable_custom_textobjects = 1
 endif
 
+" FIXME: not work
 if !exists("g:nvim_nim_highlighter_enable")
     let g:nvim_nim_highlighter_enable = 0
 endif
