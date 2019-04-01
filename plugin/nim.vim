@@ -25,6 +25,9 @@ endfunction
 
 function! FindNimModulesPath()
     if executable("choosenim")
+        " NOTE: choosenim is very slow
+        " TODO: async
+        " TODO: reimpl without dependency on 'grep'
         let a:path = split(system("choosenim show --noColor | grep 'Path:'"), ' ')
         let a:path = substitute(a:path[1], '\n', '', '')
         return a:path . "/lib/"
