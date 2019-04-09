@@ -127,7 +127,7 @@ syntax match nimToken "\.)"
 
 " Pragmas
 syntax case ignore
-syntax keyword nimPragmas contained bitsize bycopy byref compile disabling dynlib emit exportc extern header importc incompletestruct containedin=nimPragma
+syntax keyword nimPragmas contained async bitsize bycopy byref compile disabling dynlib emit exportc extern header importc incompletestruct containedin=nimPragma
 syntax keyword nimPragmas contained link nodecl packed passc passl thread threadvar unchecked union varargs volatile acyclic asmnostackframe containedin=nimPragma
 syntax keyword nimPragmas contained assertions boundchecks callconv checks codegendecl compilation compiletime computedgoto deadcodeelim containedin=nimPragma
 syntax keyword nimPragmas contained deprecated destructor error experimental fatal final global hint hints immediate importcpp importobjc containedin=nimPragma
