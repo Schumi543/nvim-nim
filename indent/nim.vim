@@ -7,6 +7,8 @@ let b:did_indent = 1
 " Some preliminary settings
 setlocal nolisp         " Make sure lisp indenting doesn't supersede us
 setlocal autoindent     " indentexpr isn't much help otherwise
+set tabstop=2
+set shiftwidth=2
 
 setlocal indentexpr=GetNimIndent(v:lnum)
 setlocal indentkeys=!^F,o,O,<:>,0),0],0},=elif
